@@ -7,8 +7,8 @@ import pandas as pd
 
 # ---------- 1단계. 데이터 불러오기 ----------
 # 기상청 CSV는 한글 인코딩(cp949)이라서 encoding을 꼭 지정해야 합니다!
-seoul = pd.read_csv("서울 기온.csv", encoding="cp949")
-yang = pd.read_csv("양평 기온.csv", encoding="cp949")
+seoul = pd.read_csv("서울_기온.csv", encoding="cp949")
+yang = pd.read_csv("양평_기온.csv", encoding="cp949")
 
 # ---------- 2단계. 데이터 정리하기 ----------
 # 열 이름을 다루기 쉽게 바꾸고, '일시'를 날짜/시간 형식으로 변환
